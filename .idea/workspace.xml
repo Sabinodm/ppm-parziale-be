@@ -5,12 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="94b0e8bb-a210-44f1-9382-6600c6729655" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/ppm-parziale-be.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ppm-parziale-be.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forecast/serializers.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forecast/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/forecast/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forecast_project/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/forecast_project/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/forecast/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/forecast/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +23,13 @@
       </map>
     </option>
     <option name="version" value="1" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -113,7 +117,7 @@
       <option name="presentableId" value="Default" />
       <updated>1750009456727</updated>
       <workItem from="1750009457737" duration="4022000" />
-      <workItem from="1750085734719" duration="3028000" />
+      <workItem from="1750085734719" duration="4952000" />
     </task>
     <servers />
   </component>
