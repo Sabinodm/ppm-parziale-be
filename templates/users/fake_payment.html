@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Finto Pagamento</title>
+</head>
+<body>
+    <h1>Ciao {{ request.user.username }} 👋</h1>
+    <p>Vuoi diventare un utente <strong>premium</strong>?</p>
+    <p>Clicca sul bottone qui sotto per simulare un pagamento.</p>
+
+    <form method="post">
+        {% csrf_token %}
+        <button type="submit">Paga ora (gratis)</button>
+    </form>
+</body>
+</html>
