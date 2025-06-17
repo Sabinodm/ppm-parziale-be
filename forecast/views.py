@@ -21,3 +21,13 @@ class ForecastCreateView(generics.CreateAPIView):
 
         fake_result = random.choice(["Soleggiato 25°C", "Pioggia 18°C", "Neve -2°C"])
         serializer.save(user=user, result=fake_result)
+
+class ForecastHistoryView(generics.ListAPIView):
+    serializer_class = ForecastQuerySerializer
+    permission_classes = [permissions.IsAuthenticated]
+
+    def get_queryset(self):
+        user = self.request.user
+        if not user.is_premium:
+            raise PermissionDenied("Solo gli utenti premium possono vedere lo storico delle previsioni.")
+        return ForecastQuery.objects.filter(user=user).order_by('-created_at')
