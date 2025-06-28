@@ -5,7 +5,7 @@ from datetime import date, time, timedelta
 import random
 
 start_date = date(2025, 6, 28)
-end_date = date(2025, 7, 9)
+end_date = date(2025, 7, 13)
 hours = list(range(0, 24))
 
 weather_samples = [
