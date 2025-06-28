@@ -7,10 +7,11 @@ class ForecastData(models.Model):
     date = models.DateField()
     TIME_CHOICES = [(time(h, 0), f"{h:02d}") for h in range(0, 24)]
     time = models.TimeField(choices=TIME_CHOICES)
+    temp = models.FloatField(null=True, blank=True)
     result = models.TextField()
 
     def __str__(self):
-        return f"{self.location} {self.date} {self.time} → {self.result}"
+        return f"{self.location} {self.date} {self.time} {self.temp}°C → {self.result}"
 
 
 class ForecastQuery(models.Model):
