@@ -3,7 +3,7 @@ from .models import CustomUser
 from .serializers import RegisterSerializer
 from rest_framework.permissions import AllowAny
 from django.contrib.auth.decorators import login_required
-from django.shortcuts import render, redirect
+from django.shortcuts import render
 
 class RegisterView(generics.CreateAPIView):
     queryset = CustomUser.objects.all()
@@ -11,7 +11,7 @@ class RegisterView(generics.CreateAPIView):
     permission_classes = [AllowAny]  # chiunque può registrarsi
 
 @login_required
-def fake_payment_view(request):
+def payment_view(request):
     user = request.user
     if user.is_premium:
         return render(request, "users/already_premium.html", {"user": user})
