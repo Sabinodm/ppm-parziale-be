@@ -1,10 +1,12 @@
 from django.db import models
 from django.conf import settings
+from datetime import time
 
 class ForecastData(models.Model):
     location = models.CharField(max_length=100)
     date = models.DateField()
-    time = models.TimeField()
+    TIME_CHOICES = [(time(h, 0), f"{h:02d}") for h in range(0, 24)]
+    time = models.TimeField(choices=TIME_CHOICES)
     result = models.TextField()
 
     def __str__(self):
