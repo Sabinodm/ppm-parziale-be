@@ -7,8 +7,7 @@
     <list default="true" id="94b0e8bb-a210-44f1-9382-6600c6729655" name="Changes" comment="FEAT: added function for creating new forecasts from admin">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forecast/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/forecast/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forecast/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/forecast/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/forecast/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/forecast/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/forecast/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/forecast/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -142,7 +141,7 @@
       <workItem from="1750178497886" duration="7433000" />
       <workItem from="1751035090308" duration="14000" />
       <workItem from="1751036204199" duration="2151000" />
-      <workItem from="1751099853275" duration="10836000" />
+      <workItem from="1751099853275" duration="13830000" />
     </task>
     <task id="LOCAL-00001" summary="FEAT: added function for creating new forecasts from admin">
       <option name="closed" value="true" />

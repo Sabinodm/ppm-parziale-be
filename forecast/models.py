@@ -12,9 +12,12 @@ class ForecastData(models.Model):
 
 
 class ForecastQuery(models.Model):
-    user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+    user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, null=True, blank=True)
     forecast_data = models.ForeignKey(ForecastData, on_delete=models.SET_NULL, null=True)
+    session_id = models.CharField(max_length=40, null=True, blank=True)
     created_at = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
-        return f"{self.user.username} - {self.forecast_data} - {self.created_at}"
+        if self.user:
+            return f"{self.user.username} - {self.forecast_data} - {self.created_at}"
+        return f" session: {self.session_id} - {self.forecast_data} - {self.created_at}"
