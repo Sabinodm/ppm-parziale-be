@@ -8,6 +8,8 @@ from django.utils.timezone import localdate
 class ForecastCreateView(generics.CreateAPIView):
     serializer_class = ForecastQuerySerializer
     permission_classes = [permissions.IsAuthenticated]
+    queryset = ForecastQuery.objects.all()
+    name = "Forecast"
 
     def create(self, request, *args, **kwargs):
         user = request.user
@@ -15,6 +17,11 @@ class ForecastCreateView(generics.CreateAPIView):
         location = data.get("location")
         date = data.get("date")
         time = data.get("time")
+
+        try:
+            forecast_data = ForecastData.objects.get(location=location, date=date, time=time)
+        except ForecastData.DoesNotExist:
+            return Response({"detail": "Previsione non trovata nel database."}, status=404)
 
         if not user.is_premium:
             today = localdate()

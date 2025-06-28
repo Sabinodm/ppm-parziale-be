@@ -4,17 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="94b0e8bb-a210-44f1-9382-6600c6729655" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+    <list default="true" id="94b0e8bb-a210-44f1-9382-6600c6729655" name="Changes" comment="FEAT: added function for creating new forecasts from admin">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forecast/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/forecast/migrations/0001_initial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forecast/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/forecast/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/forecast/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/forecast/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/forecast/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/forecast/serializers.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/forecast/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/forecast/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/migrations/0001_initial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,8 +142,17 @@
       <workItem from="1750178497886" duration="7433000" />
       <workItem from="1751035090308" duration="14000" />
       <workItem from="1751036204199" duration="2151000" />
-      <workItem from="1751099853275" duration="4553000" />
+      <workItem from="1751099853275" duration="10836000" />
     </task>
+    <task id="LOCAL-00001" summary="FEAT: added function for creating new forecasts from admin">
+      <option name="closed" value="true" />
+      <created>1751107882115</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1751107882115</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -164,5 +168,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="FEAT: added function for creating new forecasts from admin" />
+    <option name="LAST_COMMIT_MESSAGE" value="FEAT: added function for creating new forecasts from admin" />
   </component>
 </project>
