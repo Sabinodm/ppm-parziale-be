@@ -11,16 +11,15 @@ User types and access levels
 | User Type  | Access Level | Requests per day | Forecasts History |
 |------------|--------------|------------------|-------------------|
 | Anonymous  | Free         | 10               | No                |
-| Registered | Free         | 100              | No                |
+| Registered | Free         | 10               | No                |
 | Premium    | Paid         | Unlimited        | Yes               |
 
 Usage for premium users
 ========================
 1. **Register a new user**: Use the `/api/register/` endpoint to create a new user account.
 2. **Login**: Use the `/api/token/` endpoint to log in and receive an authentication token.
-3. **Request a forecast**: Use the `/api/forecast/` endpoint to get the weather forecast for a specific location, date, and time.
-4. **Become a premium user**: Use the `/api/payment/` endpoint to simulate a payment and gain premium access.
-
+3. **Become a premium user**: Use the `/api/payment/` endpoint to simulate a payment and gain premium access.
+4. **Request a forecast**: Use the `/api/forecast/` endpoint to get the weather forecast for a specific location, date, and time.
 5. **View past forecasts**: Premium users can access the `/api/forecast/history/` endpoint to view their past forecasts.
 
 API Endpoints
@@ -29,7 +28,7 @@ API Endpoints
 | Method | URL                      | Description                              |
 |--------|--------------------------|------------------------------------------|
 | POST   | `/api/register/`         | Register a new user                      |
-| POST   | `/api/token/`            | Login and receive auth token             |
+| POST   | `/auth/login/`           | Login and receive auth token             |
 | POST   | `/api/forecast/`         | Request forecast by location, date, time |
 | GET    | `/api/forecast/history/` | List past forecasts (premium only)       |
 | POST   | `/api/payment/`          | Simulate payment to become premium       |
@@ -43,6 +42,12 @@ Preregistered users
 Admin Panel
 ========================
 Access via: `/admin/`
+
+Staff credentials:
+
+| Username | Password      |
+|----------|---------------|
+| Staff    | Staff         |
 
 - Insert forecasts manually under ForecastData
 - Add users and promote them as premium manually if needed
