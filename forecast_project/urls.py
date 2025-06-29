@@ -21,5 +21,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include('forecast.urls')),
     path('auth/', include('rest_framework.urls')),  # login via browser
-    path('api/', include('users.urls')),
+    path('user/', include('users.urls')),
 ]
