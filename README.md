@@ -30,7 +30,6 @@ API Endpoints
 | POST   | `/user/register/`        | Register a new user                      |
 | POST   | `/user/payment/`         | Simulate payment to become premium       |
 | POST   | `/auth/login/`           | Login and receive auth token             |
-| POST   | `/auth/logout/`          | Logout                                   |
 | POST   | `/api/forecast/`         | Request forecast by location, date, time |
 | GET    | `/api/forecast/history/` | List past forecasts (premium only)       |
 
