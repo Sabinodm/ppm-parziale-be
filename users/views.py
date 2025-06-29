@@ -10,7 +10,7 @@ class RegisterView(generics.CreateAPIView):
     serializer_class = RegisterSerializer
     permission_classes = [AllowAny]  # chiunque può registrarsi
 
-@login_required
+@login_required(login_url='/auth/login/')
 def payment_view(request):
     user = request.user
     if user.is_premium:

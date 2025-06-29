@@ -16,9 +16,9 @@ User types and access levels
 
 Usage for premium users
 ========================
-1. **Register a new user**: Use the `/api/register/` endpoint to create a new user account.
-2. **Login**: Use the `/api/token/` endpoint to log in and receive an authentication token.
-3. **Become a premium user**: Use the `/api/payment/` endpoint to simulate a payment and gain premium access.
+1. **Register a new user**: Use the `/user/register/` endpoint to create a new user account.
+2. **Login**: Use the `/auth/login/` endpoint to log in and receive an authentication token.
+3. **Become a premium user**: Use the `/user/payment/` endpoint to simulate a payment and gain premium access.
 4. **Request a forecast**: Use the `/api/forecast/` endpoint to get the weather forecast for a specific location, date, and time.
 5. **View past forecasts**: Premium users can access the `/api/forecast/history/` endpoint to view their past forecasts.
 
