@@ -2,9 +2,13 @@ Weather forecast API
 ========================
 This is a simple weather forecast API that provides weather forecast data for a given city.
 
+Deployment link:
+========================
+ https://web-production-b606.up.railway.app/
+
 Database population
 ========================
-The database is populated with sample data using the `pop_database.py` script. This script creates a set of forecasts for Firenze, from 06/28/2025 to 07/13/2025, with hourly forecasts at full hours (00–23).
+The database is populated with sample data using the `pop_database.py` script. This script creates a set of forecasts for Firenze, from 28/06/2025 to 13/07/2025, with hourly forecasts at full hours (00–23).
 
 User types and access levels
 ========================
