@@ -23,3 +23,7 @@ def payment_view(request):
         return render(request, "users/payment_success.html")
 
     return render(request, "users/fake_payment.html")
+
+
+def home_view(request):
+    return render(request, "home.html")
